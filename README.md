@@ -34,7 +34,7 @@ messaging-app-ms> docker-compose up
 ```
 
 ### Usage
-To send a message to the consumer, make a POST request to `localhost:8080/messages`.
+To send a message to the producer, make a POST request to `localhost:8080/messages`.
 
 Request body example:
 ```json

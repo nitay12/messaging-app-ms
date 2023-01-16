@@ -11,6 +11,7 @@ services:
     depends_on:
       - rabbitmq
     build: producer/.
+    restart: on-failure
     working_dir: /
     networks:
       - rabbitmq
@@ -24,6 +25,7 @@ services:
       - rabbitmq
       - producer
     build: consumer/.
+    restart: on-failure
     working_dir: /
     networks:
       - rabbitmq
